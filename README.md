@@ -5,6 +5,9 @@ Team Members:
 Avinash Mundhe 
 Aniket Kamble
 
+Demo:
+http://bmw.avinasxhhh.in/
+
 Problem Statement:
 The existing BMW website had a straightforward and minimalist design. It featured essential elements like car models, specifications, and a basic contact form. While it provided necessary information, the user experience was relatively static, with limited interactive elements and minimal user engagement features.
 This resulted in a less engaging user experience and difficulty in navigating and exploring BMW's offerings.
@@ -37,8 +40,7 @@ Easy Navigation: User-friendly layout to help users find information easily.
 Car Filtering Feature: Interactive design for filtering cars by model or body type with detailed information.
 Animations: Engaging animations and interactive designs using GSAP and Scroll Trigger.
 
-Demo:
-http://bmw.avinasxhhh.in/
+
 
 Challenges Faced:
 
