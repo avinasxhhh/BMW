@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="avinasxhhh" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" property="og:image" type="image/x-icon" href="./images/logo.svg" sizes="32x32">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BMW.com | The international BMW Website</title>
+    <!-- tailwindcss script -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- font-awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- locomotive css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- shery js css cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body theme="black">
+    <div id="cursor"></div>
+    <div class="main w-full" data-scroll-container>
+
+        <nav class="p-5 fixed w-full top-0 left-0 z-[999]">
+            <div class="container mx-auto flex items-center justify-between">
+                <!-- Mobile Menu Button -->
+                <div class="2xl:hidden xl:hidden md:hidden">
+                    <button id="menu-button" class="text-white text-[5vw] focus:outline-none"><i
+                            class="ri-menu-4-line"></i></button>
+                </div>
+
+                <!-- Left side -->
+                <div class="hidden 2xl:flex md:flex space-x-10 uppercase">
+                    <div class="navbtn1 w-fit py-3">
+                        <div class="btn w-fit h-[1.5vmax] 2xl:h-[.9vw] xl:h-[1.2vmax] :h-[.9vmax] text-white overflow-hidden leading-4 tracking-wider">
+                            <h1 class="btn-text1 font-[PlanerLight] text-white  mix-blend-difference">All Models</h1>
+                            <a href="#Models">
+                                <h1 class="btn-text1 font-[PlanerMedium] text-white mix-blend-difference">All Models</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbtn2 w-fit py-3">
+                        <div class="btn w-fit h-[1.5vmax] 2xl:h-[.9vw] xl:h-[1.2vmax] md:h-[.9vmax] text-white overflow-hidden leading-4 tracking-wider">
+                            <h1 class="btn-text2 font-[PlanerLight] text-white mix-blend-difference">Circular World</h1>
+                            <a href="#">
+                                <h1 class="btn-text2 font-[PlanerMedium] text-white mix-blend-difference">Circular World</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logo in the center -->
+                <div class="flex h-10 overflow-hidden items-center flex-col flex-1">
+                    <a class="bmw-logo-text py-1 pb-10 translate-x-[5vw] 2xl:translate-x-[2.5vw] h-7" href="#home"><span
+                            class=" text-neutral-500 font-semibold text-2xl tracking-wider font-[conthrax] magnet mix-blend-difference">BMW</span></a>
+                    <a href="#home"><img
+                            class="bmw-logo-text h-[40px] translate-x-[5vw] 2xl:translate-x-[2.5vw] mix-blend-difference"
+                            src="./images/logo.svg"></a>
+                </div>
+
+                <!-- Right side -->
+                <div class="hidden 2xl:flex xl:flex md:flex space-x-8 uppercase">
+                    <div class="navbtn3 w-fit py-3">
+                        <div class="btn w-fit h-[1.5vmax] 2xl:h-[.9vmax] xl:h-[1.2vmax] md:h-[.9vmax] text-white overflow-hidden leading-4 tracking-wider">
+                            <h1 class="btn-text3 font-[PlanerLight] text-white  mix-blend-difference">Electric Future
+                            </h1>
+                            <a href="#">
+                                <h1 class="btn-text3 font-[PlanerMedium] text-white mix-blend-difference">Electric Future</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbtn4 w-fit py-3">
+                        <div class="btn w-fit h-[1.5vmax] 2xl:h-[.9vmax] xl:h-[1.2vmax] md:h-[.9vmax] text-white overflow-hidden leading-4 tracking-wider">
+                            <h1 class="btn-text4 font-[PlanerLight] text-white  mix-blend-difference">Digital Journey
+                            </h1>
+                            <a href="#">
+                                <h1 class="btn-text4 font-[PlanerMedium] text-white mix-blend-difference">Digital Journey</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="search-icon" class="text-white text-[5vw] xl:text-[1.5vw] 2xl:text-[1vw] focus:outline-none ml-10">
+                    <div class="icon magnet"><i class="ri-search-line"></i></div>
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden xl:hidden 2xl:hidden bg-zinc-900 rounded-lg mt-3">
+                <a href="#Models" class="block text-white hover:text-gray-400 p-2">All Models</a>
+                <a href="#" class="block text-white hover:text-gray-400 p-2">Circular World</a>
+                <a href="#" class="block text-white hover:text-gray-400 p-2">Electric Future</a>
+                <a href="#" class="block text-white hover:text-gray-400 p-2">Digital Journey</a>
+            </div>
+        </nav>
+
+        <section class="first home" data-scroll>
+            <!-- Desktop Home -->
+            <div class="D-home w-full ">
+                <div class="cont h-[500vh] relative">
+                    <div class="slides overflow-hidden sticky top-0 left-0 flex w-full h-[100vh]">
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div style="--clip: 0%" class="videocont1 w-[90%] h-[85%] magnet">
+                                <video class="video w-full h-full object-cover" muted autoplay loop
+                                    src="./videos/mainpage/5.mp4"></video>
+                            </div>
+
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div class="helper absolute 2xl:w-[52vw] 2xl:h-[20vh] w-[90vw] h-[10vh] bg-black"></div>
+                                <div class=" w-fit h-[3vmax] 2xl:h-[2vmax] xl:h-[2vmax] md:h-[2vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-xl 2xl:text-3xl xl:text-3xl md:text-3xl">BMW Vision Neue Klasse X</h1>
+                                </div>
+                                <div class="vdtext w-fit h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-3xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl">Welcome to the Neue Klasse Family fromBMW</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div class="videocont  magnet w-[90%] h-[85%]">
+                                <video class="video w-full h-full object-cover" muted autoplay loop src="./videos/mainpage/4.mp4"></video>
+                            </div>
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div class=" w-fit h-[3vmax] 2xl:h-[2vmax] xl:h-[2vmax] md:h-[2vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-xl 2xl:text-3xl  xl:text-3xl md:text-3xl">BMW Art Car #20</h1>
+                                </div>
+                                <div class="vdtext w-fit h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-2xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl">Julie Mehretu - dynamics in form</h1>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div class="videocont  magnet w-[90%] h-[85%]">
+                                <video class="video w-full h-full object-cover" muted autoplay loop
+                                    src="./videos/mainpage/1.mp4"></video>
+                            </div>
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div class=" w-fit h-[3vmax] 2xl:h-[2vmax] xl:h-[2vmax] md:h-[2vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-xl 2xl:text-3xl  xl:text-3xl md:text-3xl">BMW Concept Skytop</h1>
+                                </div>
+                                <div class="vdtext w-fit h-[3vmax] 2xl:w-fit 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl">The fusion of tradition and modernity
+                                    </h1>
+                                </div>
+                                <div class="vdtext w-[90%] h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-2xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl"></h1>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div class="videocont  magnet w-[90%] h-[85%]">
+                                <video class="video w-full h-full object-cover" muted autoplay loop
+                                    src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/e-ink/eink-08-media-hd.mp4"></video>
+                            </div>
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div
+                                    class=" w-fit h-[3vmax] 2xl:h-[2vmax] xl:h-[2vmax] md:h-[2vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-xl 2xl:text-3xl  xl:text-3xl md:text-3xl">Art meets innovation</h1>
+                                </div>
+                                <div
+                                    class="vdtext w-fit h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-2xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl">The BMW i5 Flow NOSTOKANA</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div class="videocont  magnet w-[90%] h-[85%]">
+                                <video class="video w-full h-full object-cover" muted autoplay loop
+                                    src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/qt/qt-01-stage-hd.mp4"></video>
+                            </div>
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div class=" w-fit h-[3vmax] 2xl:h-[2vmax] xl:h-[2vmax] md:h-[2vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-xl 2xl:text-3xl  xl:text-3xl md:text-3xl">The future of luxury</h1>
+                                </div>
+                                <div
+                                    class="vdtext w-fit h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wider">
+                                    <h1 class="vdtext text-2xl px-5 2xl:text-5xl xl:text-5xl md:text-5xl">Digital art meets mobility</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide w-full h-screen flex items-center justify-center flex-shrink-0">
+                            <div class="videocont  magnet w-[90%] h-[85%]">
+                                <video class="video w-full h-full object-cover" muted autoplay loop src="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/Design/artcars/ac-20-media-hd.mp4"></video>
+                            </div>
+                            <div class="vdt absolute text-center font-[PlanerLight] text-white flex flex-col items-center justify-center">
+                                <div class=" w-fit h-[4vmax] 2xl:h-[3vmax] xl:h-[3vmax] md:h-[3vmax] text-white overflow-hidden leading-4 tracking-wide">
+                                    <h1 class="vdtext text-2xl 2xl:text-5xl xl:text-5xl md:text-5xl">Cao Fei / BMW M6 GT3 / 2017</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="third w-full h-[85vh] my-10 flex justify-center 2xl:items-start md:items-start xl:items-start overflow-hidden 2xl:h-[70vh] 2xl:my-0 xl:h-[70vh] xl:my-0  md:h-[70vh] md:my-0  relative">
+            <div class="homemain w-full ">
+                <div class="heading w-full px-10  leading-none">
+                    <h4 class="text-white text-sm 2xl:text-2xl xl:text-2xl md:text-2xl pl-[1.6vw] font-[PlanerLight]">Learn everything about BMW here</h4>
+                    <div class="leftsidetext font-[Anton] text-[20vw] 2xl:text-[15vw] xl:text-[15vw] md:text-[15vw]">
+                        <div class="hvr stroke-white hover:text-white hover:stroke-0 hover:stroke-black">All</div>
+                        <div class="hvr hover:text-white hover:stroke-0 hover:stroke-black">BMW</div>
+                    </div>
+                    <div class="img-cont mt-52 2xl:mt-0 xl:mt-0 md:mt-0 w-full 2xl:w-[48vw] xl:w-[48vw] md:w-[48vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] overflow-hidden">
+                        <div class="thpgimg flex gap-5 2xl:gap-10 xl:gap-10 md:gap-10" >
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img w-full h-full rounded-3xl object-cover" src="./images/third/t1.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img  w-full h-full rounded-3xl object-cover" src="./images/third/t2.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class=" t-img w-full h-full rounded-3xl object-cover" src="./images/third/t3.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img  w-full h-full rounded-3xl object-cover" src="./images/third/t4.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img w-full h-full rounded-3xl object-cover" src="./images/third/t5.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img w-full h-full rounded-3xl object-cover" src="./images/third/t6.jpg" alt="">
+                            </div>
+                            <div class="t-imgs w-[70vw] 2xl:w-[20vw] xl:w-[20vw] md:w-[20vw] h-[20vh] 2xl:h-[25vh] xl:h-[25vh] md:h-[25vh] flex-shrink-0">
+                                <img class="t-img w-full h-full rounded-3xl object-cover" src="./images/third/t7.jpg" alt="">
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="paragraph w-[60vw] 2xl:w-[38vw] xl:w-[38vw] md:w-[38vw] absolute top-[15vh] 2xl:top-[5vh] xl:top-[5vh] md:top-[5vh] right-10 font-[conthrax] text-end 2xl:text-start xl:text-start md:text-start text-neutral-700 text-[1.3vh] 2xl:text-[1.3vw] xl:text-[1.5vw] leading-3 2xl:leading-8 xl:leading-6 md:leading-6">
+                        <p>BMW's lineup offers something for every journey. From compact city cars to luxurious sedans, versatile SUVs, high-performance models, and innovative electric vehicles.</p>
+                        <button class="buttonn w-fit my-5 2xl:my-4 xl:my-4 md:my-4flex justify-end font-[PlanerMedium] 2xl:translate-y-0 xl:translate-y-0 md:translate-y-0">
+                            <div class=" relative border-[1px] text-base 2xl:text-lg xl:text-sm md:text-sm rounded-r-full rounded-bl-full flex h-[50px] w-52 2xl:w-64 xl:w-60 md:w-60 items-center justify-center overflow-hidden text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:text-black hover:shadow-white hover:before:h-56 2xl:hover:before:w-[16vw] hover:before:w-[63vw]">
+                                <span class=" relative z-10 leading-5 flex items-center justify-center">
+                                    <div class="w-fit 2xl:h-[1.2vmax]  md:h-[1.5vmax] h-[2.2vmax] xl:h-[1.7vmax] overflow-hidden">
+                                        <h1 class="butt">BMW Explained</h1>
+                                        <h1 class="butt">BMW Explained</h1>
+                                    </div>
+                                    <i class="text-4xl pl-3 ri-arrow-right-circle-fill"></i>
+                                </span>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="rightisdetext font-[Anton] w-fit pt-10 text-end absolute  2xl:bottom-[11vh] md:bottom-[11vh] xl:bottom-[18vh] right-10">
+                        <div class="hvr text-[25vw] 2xl:text-[15vw] xl:text-[15vw] md:text-[15vw]  text-black hover:text-white hover:stroke-0 hover:stroke-black">Models</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="fourth w-full min-h-screen md:2xl:h-screen xl:2xl:h-screen 2xl:h-screen overflow-hidden bg-black relative" id="Models">
+   
+            <div class="topp w-full my-10 text-white">
+                <div class="container 2xl:px-0 xl:px-0 md:px-0 mx-7 2xl:mx-20 xl:mx-20 md:mx-20 h-full flex flex-col justify-center font-[PlanerLight]">
+                    <h1 class="text-4xl font-bold">Find your BMW</h1>
+                    <h4 class="text-lg mt-2">Please choose the model you would like to drive.</h4>
+                    <div class="mt-4">
+                        <!-- Car Model Type -->
+                        <div>
+                            <div class="flex mt-2 ">
+                                <button data-model="all" class="model-btn border-[1px] border-neutral-800 text-white 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 hidden md:block xl:block 2xl:block">All MODELS</button>
+                                <button data-model="i" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">i</button>
+                                <button data-model="x" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">x</button>
+                                <button data-model="m" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">m</button>
+                                <button data-model="7" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">7</button>
+                                <button data-model="6" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">6</button>
+                                <button data-model="2" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">2</button>
+                                <button data-model="Z4" class="model-btn border-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-6 xl:py-2 xl:px-6 md:py-2 md:px-6 ">Z4</button>
+                            </div>
+                        </div>
+                        <!-- Body Type -->
+                        <div class="mt-4 overflow-x-auto">
+                            <div class="flex mt-2">
+                                <button data-body="all" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-4 hidden 2xl:block md:block xl:block">All TYPES</button>
+                                <button data-body="sedan" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Sedan</button>
+                                <button data-body="Coupé" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Coupé</button>
+                                <button data-body="Gran Turismo" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Turismo</button>
+                                <button data-body="Roadster" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Roadster</button>
+                                <button data-body="Gran Coupé" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Gran</button>
+                                <button data-body="Sports Activity Vehicle" class="body-btn border-b-[1px] border-neutral-800 text-white py-2 px-5 2xl:py-2 2xl:px-7">Sports</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomm flex flex-col 2xl:flex-row  xl:flex-row md:flex-row h-[90%]">
+                <div class="left w-full 2xl:w-[30%] md:w-[30%] xl:w-[30%] h-[40vh] 2xl:px-10 2xl:h-[70%] xl:h-[70vh] xl:px-0 md:h-[70vh] md:px-0  px-0 border-r-2 border-neutral-800">
+                    <div class="container px-10 h-full flex flex-col justify-start p-4 ">
+                        <h2 class="text-xl mb-4 text-white">All BMW Cars</h2>
+                        <ul id="carList" class="carlist space-y-4 text-white">
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right w-full 2xl:w-[70%] h-full pl-4 text-white my-10 2xl:my-0 xl:my-0 md:my-0 ">
+                    <h2 class="text-xl font-[PlanerLight] mb-4">Car Details</h2>
+                    <div id="carDetails"
+                        class=" p-4 flex flex-col items-start justify-center transition-all duration-500">
+                        <p class="text-neutral-700">Select a car to see details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fifth mb-20 2xl:mb-10 xl:mb-10  md:mb-10 w-full h-screen relative 2xl:h-[130vh] xl:h-[130vh] md:h-[130vh] overflow-hidden">
+            <div class="top-text w-[115vw] font-[Anton] leading-none absolute z-20 mt-7">
+                <h1 class="podtext1 text-white text-[15vw] 2xl:text-[8vw] xl:text-[8vw] md:text-[8vw] md:translate-x-48 xl:translate-x-48 2xl:translate-x-48">THE BMW PODCAST</h1>
+                <h1 class="changing text-[18vw] 2xl:text-[8vw] xl:text-[8vw] md:text-[8vw] 2xl:translate-x-28 xl:translate-x-28 md:translate-x-28">CHANGING LANES</h1>
+            </div>
+            <div class="pod-img w-full absolute top-24 z-10">
+                <img class="iamgessss w-full h-full object-cover" src="./images/podimg.jpg" alt="">
+            </div>
+            <div class="pod-img w-[50%] absolute left-1/2 -translate-x-1/2 top-[70vw] z-10 2xl:w-[20%] 2xl:top-[45vw] 2xl:translate-x-1/2 xl:w-[20%] xl:top-[45vw] xl:translate-x-1/2 md:w-[20%] md:top-[45vw] md:translate-x-1/2">
+                <img class="podimg2 w-full h-full object-cover" src="./images/podimg2.jpg">
+            </div>
+            <p class="textpara text-white text-lg font-[PlanerLight] leading-6 px-10 py-10 text-end absolute bottom-10 2xl:bottom-28 2xl:py-5 2xl:mr-[30vw] 2xl:px-[15vw] xl:bottom-28 xl:py-5 xl:mr-[30vw] xl:px-[15vw] md:bottom-28 md:py-5 md:mr-[30vw] md:px-[15vw]"> Changing Lanes is the official podcast from BMW. In these audio series, we take you with us on new journeys through the BMW universe. Find out more about sustainability, innovation, technology, mobility and the latest trends. You can find and subscribe to Changing Lanes on all major podcast platforms, so tune in!</p>
+            <button class="pbuttonn pb-14 2xl:pb-0 xl:pb-0 md:pb-0 my-10 flex justify-center items-center font-[PlanerMedium] absolute -translate-x-1/2 left-1/2 bottom-0 translate-y-[20vw] 2xl:translate-y-0 xl:translate-y-0 md:translate-y-0">
+                <div class=" relative border-[1px] text-1xl rounded-r-full rounded-bl-full flex h-[50px] w-64 2xl:w-[10vw] xl:w-[14vw] md:w-[10vw] items-center justify-center overflow-hidden text-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-white before:duration-500 before:ease-out hover:text-black hover:shadow-white hover:before:h-56 2xl:hover:before:w-[16vw] xl:hover:before:w-[16vw] md:hover:before:w-[16vw] hover:before:w-[63vw]">
+                    <span class=" relative z-10 leading-5 flex items-center justify-center">
+                        <div class="w-fit 2xl:h-[1.2vmax] xl:h-[1vmax] md:h-[1.2vmax] h-[2.2vmax] overflow-hidden">
+                            <h1 class="pbutt">Listen now</h1>
+                            <h1 class="pbutt">Listen now</h1>
+                        </div>
+                        <i class="text-4xl pl-3 ri-arrow-right-circle-fill"></i>
+                    </span>
+                </div>
+            </button>
+        </section>
+
+
+        <section class="sixth w-full h-[70vh] flex flex-col items-center justify-center relative overflow-hidden">
+            <div class="album-cover w-[90%]">
+                <div class="swiper w-full p-[40px 100px 100px]">
+                    <div class="swiper-wrapper font-[PlanerLight]">
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none" src="./images/podcast/4.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/fat-Alexandra-Renner/fat-ar.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/5.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/podcast/changing-lanes/dee-teaser-long.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/2.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/hypnopolis2-podcast/211129_Hypnopoli2_Trailer_Master_long.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/1.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/hypnopolis-podcast/bmw-podcast-hypnopolis-01-podcast-00.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/3.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/innovation/hypnopolis2-podcast/211129_Hypnopoli2_Trailer_Master_long.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/6.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/podcast/changing-lanes/greenest-car-teaser-v3.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide aspect-square max-w-[200px] rounded-[10px] relative">
+                            <img class="w-full h-full rounded-lg origin-center pointer-events-none select-none " src="./images/podcast/7.jpg" />
+                            <div class="overlay">
+                                <a href="https://www.bmw.com/video/is/content/BMW/bmwcom/bmw_com/category/podcast/changing-lanes/000_fwd.mp3" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-player mt-10 flex flex-col justify-center items-center text-white w-[380px] p-[10px 30px] rounded-[20px]">
+                <h1 class="text-[1.5rem] font-[600] leading-[1.6]">Title</h1>
+                <p class="text-[1rem] font-[400] opacity-[0.6]">Song Name</p>
+                <audio id="song">
+                    <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+                </audio>
+                <input type="range" value="0" id="progress" />
+                <div class="controls flex items-center justify-center">
+                    <button class="backward">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+                    <button class="play-pause-btn">
+                        <i class="fa-solid fa-play" id="controlIcon"></i>
+                    </button>
+                    <button class="forward">
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seventh pt-20 w-full h-fit overflow-hidden 2xl:h-screen xl:h-screen md:h-screen relative ">
+            <div class="text-cont leading-[15vw] 2xl:leading-[5vw] xl:leading-[5vw] md:leading-[5vw] ">
+                <h1 class="con-text font-[Anton] text-[15vw] text-white uppercase 2xl:text-[5vw] xl:text-[5vw] md:text-[5vw] text-center">BMW in your</h1>
+                <h1 class="con-text font-[Anton] text-[15vw] text-white uppercase 2xl:text-[5vw] xl:text-[5vw] md:text-[5vw] text-center">country</h1>
+            </div>
+            <div class="slider-cont flex flex-col justify-center items-center gap-5">
+                <!-- left slider -->
+                <div class="slider-left ls flex 2xl:-translate-x-[90vw] xl:-translate-x-[90vw] md:-translate-x-[90vw] -translate-x-[300vw] 2xl:w-[20vw] 2xl:h-[20vh] xl:w-[20vw] xl:h-[20vh] md:w-[20vw] md:h-[20vh] mt-60">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat " id="v1">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/cannes24/cannes24-00-teaser-hd1.jpg?imwidth=1024">
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v2">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/lego/lego-00-teaser-hd.jpg?imwidth=768">
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v3">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/qt/qt-00-teaser-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v4">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/i5/i5-00-teaser-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v5">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/sky/sky-04-media-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v6">
+
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out scale-125 hover:scale-150" muted loop autoplay src="./videos/mainpage/4.mp4"></video>
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v7">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="./videos/mainpage/5.mp4"></video>
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v8">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/Christmas2023/Chr23-00-teaser-hd.jpg?imwidth=768">
+                        </div>
+                        <div class="swiper-slide relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v9">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/rebelle-rally/rally-00-teaser-hd.jpg?imwidth=768">
+                        </div>
+                    </div>
+                </div>
+                <!-- right slider -->
+                <div class="slider-right rs 2xl:-translate-x-[40vw] xl:-translate-x-[40vw] md:-translate-x-[40vw] -translate-x-[-270vw] h-[30%] 2xl:w-[20vw] 2xl:h-[20vh] xl:w-[20vw] xl:h-[20vh] md:w-[20vw] md:h-[20vh]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v10">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/events/neue-klasse/neue-klasse-prime-00-teaser-hd.jpg?imwidth=768" alt="">
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v11">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/phyg/phyg-00-teaser-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v12">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="./videos/mainpage/7.mp4"></video>
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v13">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/freude/VNKX/vnkx-01-stage-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v14">
+                            <video class="video w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" muted loop autoplay src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/digital-journey/e-ink/eink-00-teaser-hd.mp4"></video>
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v15">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/electric-future/thecalm/tc-00-teaser-hd.jpg?imwidth=768" alt="">
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v16">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/events/neue-klasse/mobility/nk-mag-00-teaser-hd.jpg?imwidth=1024" alt="">
+                        </div>
+                        <div class="swiper-slide  relative max-w-xs overflow-hidden bg-cover bg-no-repeat" id="v18">
+                            <img class="w-full h-full object-cover max-w-xs transition duration-300 ease-in-out hover:scale-110" src="https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/electric-future/iow/iow-00-teaser-hd.jpg?imwidth=768" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer class="w-full min-h-fit my-10 overflow-hidden">
+            <!-- mobile footer -->
+            <div class="mofooter 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center xl:flex xl:flex-col xl:justify-center xl:items-center md:flex md:flex-col md:justify-center md:items-center">
+                <div class="links font-[PlanerLight] flex flex-col gap-6 2xl:w-[80%] xl:w-[100%] md:w-[80%]">
+                    <div class="flex justify-center flex-1">
+                        <a href="#home"><img class="h-[40px] magnet" src="./images/logo.svg"></a>
+                    </div>
+                    <div class="flex justify-center space-x-10 uppercase text-[3vw] 2xl:text-[1vw] 2xl:hidden xl:hidden md:hidden ">
+                        <a href="#" class="text-white">Circular World</a>
+                        <a href="#" class="text-white">Electric Future</a>
+                    </div>
+                    <div class="flex justify-around space-x-10 mx-5 uppercase text-[3vw] 2xl:text-[1vw]  xl:text-[1.5vw]  md:text-[1vw]">
+                        <a href="#" class="text-white group relative"><span>All Models</span><span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span></a>
+                        <a href="#" class="text-white group relative 2xl:block xl:block md:block hidden"><span>Circular World</span><span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span></a>
+                        <a href="#" class="text-white group relative 2xl:block xl:block md:block hidden"><span>Electric Future</span><span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span></a>
+                        <a href="#" class="text-white group relative"><span>Digital Journey</span><span class="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-white group-hover:w-full"></span></a>
+                    </div>
+                </div>
+                <div class="footicons  2xl:w-[20%] xl:w-[20%] md:w-[20%] text-white text-xl flex justify-around py-10 mx-10">
+                    <a class="magnet 2xl:text-[1vw]" xl:text-[1vw] md:text-[1vw] href=""><i class="ri-facebook-circle-fill"></i></a>
+                    <a class="magnet 2xl:text-[1vw]" xl:text-[1vw] md:text-[1vw] href=""><i class="ri-twitter-x-fill"></i></a>
+                    <a class="magnet 2xl:text-[1vw]" xl:text-[1vw] md:text-[1vw] href=""><i class="ri-instagram-fill"></i></a>
+                    <a class="magnet 2xl:text-[1vw]" xl:text-[1vw] md:text-[1vw] href=""><i class="ri-youtube-fill"></i></a>
+                </div>
+                <div class="dropdown font-[PlanerLight] w-[80%] bg-black text-lg text-white mx-10 border-b-[1px] border-t-[1px] 2xl:w-[90%] xl:w-[90%] md:w-[90%]">
+                    <label for="touch1"><span class="py-3 px-5 block font-[PlanerMedium]">Quick Links</span></label>
+                    <input type="checkbox" id="touch1">
+                    <ul class="slide1 clear-both w-full h-0  border-b-[1px] border-[#151515] overflow-hidden ">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">BMW in your country</a></li>
+                        <li><a href="#">BMW Group Careers</a></li>
+                        <li><a href="#">EU Detergents Regulation</a></li>
+                        <li><a href="#">REACH Regulation</a></li>
+                        <li><a href="#">Compatibility Check</a></li>
+                        <li><a href="#">Software Update</a></li>
+                        <li><a href="#">Accessories Update</a></li>
+                        <li><a href="#">Connected Test Vehicle</a></li>
+                        <li><a href="#">Service Page Charging Products</a></li>
+                        <li><a href="#">Cooperation Test Car</a></li>
+                    </ul>
+
+
+                    <label for="touch2"><span class="py-3 px-5 block font-[PlanerMedium]">More BMW Websites</span></label>
+                    <input type="checkbox" id="touch2">
+                    <ul class="slide2 clear-both w-full h-0  border-b-[1px] border-[#151515] overflow-hidden ">
+                        <li><a href="#">BMW M</a></li>
+                        <li><a href="#">BMW M Motorsport</a></li>
+                        <li><a href="#">BMW Golfsport</a></li>
+                        <li><a href="#">BMW M Driving Experience</a></li>
+                        <li><a href="#">BMW Welt</a></li>
+                        <li><a href="#">BMW Group Classic</a></li>
+                        <li><a href="#">BMW Corporate/Direct Sales</a></li>
+                        <li><a href="#">BMW Group</a></li>
+                        <li><a href="#">BMW Group Culture</a></li>
+                        <li><a href="#">BMW ConnectedDrive Upgrades</a></li>
+                    </ul>
+
+
+                    <label for="touch3"><span class="py-3 px-5 block font-[PlanerMedium]">BMW.com</span></label>
+                    <input type="checkbox" id="touch3">
+                    <ul class="slide3 clear-both w-full h-0  border-b-[1px] border-[#151515] overflow-hidden ">
+                        <li><a href="#">About BMW.com</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Imprint</a></li>
+                        <li><a href="#">Legal Notice / Data protection</a></li>
+                    </ul>
+
+
+                    <label for="touch4"><span class="py-3 px-5 block font-[PlanerMedium]">Languages</span></label>
+                    <input type="checkbox" id="touch4">
+                    <ul class="slide4 clear-both w-full h-0  overflow-hidden ">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Deutsch</a></li>
+                        <li><a href="#">Italiano</a></li>
+                        <li><a href="#">Français</a></li>
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">日本語</a></li>
+                    </ul>
+
+                </div>
+                <div class="endlinks w-full 2xl:flex 2xl:justify-between 2xl:px-32 xl:flex xl:justify-between xl:px-32 md:flex md:justify-between md:px-32">
+                    <h1 class="text-white 2xl:text-[.8vw]  xl:text-[.8vw]  md:text-[.8vw] text-center my-5 font-[PlanerMedium]">© BMW AG 2024</h1>
+                    <div class="endlinks text-[3vw] flex justify-around 2xl:items-center 2xl:text-[.8vw] 2xl:gap-10 xl:items-center xl:text-[.8vw] xl:gap-10 md:items-center md:text-[.8vw] md:gap-10 ">
+                        <a href="#" class="text-white">SITEMAP</a>
+                        <a href="#" class="text-white">CONTACT US</a>
+                        <a href="#" class="text-white">TEAM AND CPNDITIONS</a>
+                        <a href="#" class="text-white">PRIVACY POLOCY</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Minified UMD bundle split -->
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- gsap js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- scrollTrigger js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- locomotive js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <!-- three js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <!-- shery js cdn -->
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <script src="./script.js"></script>
+    <script src="./cardatabase.js"></script>
+</body>
+</html>

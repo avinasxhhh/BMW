@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap");
+
+@font-face {
+    font-family: PlanerLight;
+    src: url(./fonts/Planer-Light.woff2);
+}
+
+@font-face {
+    font-family: PlanerMedium;
+    src: url(./fonts/Planer-Medium.woff2);
+}
+
+@font-face {
+    font-family: RoganSamiBold;
+    src: url(./fonts/Rogan-SemiBold.woff2);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(./fonts/Anton-Regular.woff2);
+}
+
+@font-face {
+    font-family: conthrax;
+    src: url(./fonts/conthrax-sb.woff2);
+}
+
+:root {
+    --Dark: #000000;
+    --DarkGrey: #0b0a06;
+    --Darklight: #818080;
+    --white: #ffffff;
+}
+
+*::selection {
+    background-color: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    background: #202324;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #575e62;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body[theme="black"] {
+    background-color: var(--Dark);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cursor {
+    height: 180px;
+    width: 180px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+/* 1st section */
+.videocont1 {
+    clip-path: inset(10px round 50px 50px 50px 50px);
+}
+
+.videocont {
+    clip-path: inset(10px round 50px 50px 50px 50px);
+}
+/* 1st section end*/
+
+/* 3st section */
+.hvr {
+    color: transparent;
+    -webkit-text-stroke: 2px #585858;
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+/* 3st section end*/
+
+
+/* 4th car section */
+.left {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: auto !important;
+}
+.car:hover {
+    background-color: #565454;
+    transition: ease 0.4s;
+}
+/* 4th car section end*/
+
+/* 5th section */
+.changing {
+    -webkit-text-stroke: 1px var(--Darklight);
+}
+
+.pbuttonn {
+    z-index: 1000 !important;
+}
+
+/* 5th section end*/
+
+
+/* 6th section */
+.vdtext {
+    -webkit-text-stroke: 0.5px var(--white);
+}
+
+.vdtext-b {
+    -webkit-text-stroke: 1px var(--Dark);
+}
+
+.sixth {
+    width: 100%;
+    background: url(https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/8727c9b1-be21-4932-a221-4257b59a74dd);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    animation: slidein 120s forwards infinite alternate;
+    font-family: PlanerLight;
+}
+
+@keyframes slidein {
+    0%,
+    100% {
+        background-position: 20% 0%;
+        background-size: 3400px;
+    }
+    50% {
+        background-position: 100% 0%;
+        background-size: 2400px;
+    }
+}
+
+.swiper-slide img {
+    transform: perspective(800px);
+    transition: 0.3s ease-out;
+}
+
+.swiper-slide .overlay ion-icon {
+    opacity: 0;
+}
+
+.swiper-slide-active:hover .overlay ion-icon {
+    font-size: 4rem;
+    color: #eb0b0b;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+/* Music Player Progress */
+
+#progress {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 70%;
+    height: 7px;
+    background: rgba(163, 162, 164, 0.4);
+    border-radius: 4px;
+    margin: 32px 0 24px;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(163, 162, 164, 0.9);
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: 4px solid var(--primary-clr);
+    box-shadow: 0 6px 10px rgba(5, 36, 28, 0.3);
+}
+
+/* Music Player Controls */
+.controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+    margin: 20px;
+    /* background: rgba(163, 162, 164, 0.3); */
+    color: var(--primary-clr);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: 0;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 20px rgba(5, 36, 28, 0.3);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.controls button:is(:hover, :focus-visible) {
+    transform: scale(0.96);
+    border: 1px solid white;
+}
+.controls button:nth-child(2) {
+    transform: scale(1.3);
+}
+
+.controls button:nth-child(2):is(:hover, :focus-visible) {
+    transform: scale(1.25);
+}
+
+/* 6th section end*/
+
+/* 7th section */
+
+.swiper-slide {
+    position: relative;
+    max-width: 200px;
+    max-height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    transform-origin: center;
+    transform: perspective(800px);
+    transition: 0.3s ease-out;
+    pointer-events: none;
+    user-select: none;
+}
+
+/* 7th section end*/
+
+
+/* footer */
+
+label span::after {
+    float: right;
+    right: 10%;
+    content: "+";
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+    transition: height .4s ease;
+}
+
+.slide1 li {
+    padding: 10px 30px;
+}
+
+#touch1 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch1:checked+.slide1 {
+    height: 550px;
+}
+
+.slide2 li {
+    padding: 10px 30px;
+}
+
+#touch2 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch2:checked+.slide2 {
+    height: 500px;
+}
+
+.slide3 li {
+    padding: 10px 30px;
+}
+
+#touch3 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch3:checked+.slide3 {
+    height: 250px;
+}
+
+.slide4 li {
+    padding: 10px 30px;
+}
+
+#touch4 {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+
+#touch4:checked+.slide4 {
+    height: 300px;
+}
+
+/* footer end */
