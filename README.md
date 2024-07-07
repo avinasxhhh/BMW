@@ -1,5 +1,5 @@
 # TechTitansReimagineRound1
-Reimagining the BMW Website
+Reimagined the BMW Website
 
 Team Members: 
 Avinash Mundhe 
