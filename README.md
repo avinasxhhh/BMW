@@ -68,7 +68,7 @@ The reimagined BMW website combines modern aesthetics with advanced features, pr
 
 Additional Resources:
 GitHub Repository: (https://github.com/avinasxhhh/TechTitansReimagineRound1.git)
-Website: [bmw.avinasxhhh.in]
+Website: (bmw.avinasxhhh.in)
 
 Contact Information:
 Avinash Mundhe - 8308395346 - avinashmundhe54@gmail.com
