@@ -1,5 +1,5 @@
 # TechTitansReimagineRound1
-Project Title: BMW Website Reimagined
+Reimagining the BMW Website
 
 Team Members: 
 Avinash Mundhe 
