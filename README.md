@@ -1,9 +1,6 @@
-# TechTitansReimagineRound1
+# BMW Reimagined
 Reimagined the BMW Website
 
-Team Members: 
-Avinash Mundhe 
-Aniket Kamble
 
 Demo:
 http://bmw.avinasxhhh.in/
@@ -74,4 +71,4 @@ Website: (bmw.avinasxhhh.in)
 
 Contact Information:
 Avinash Mundhe - 8308395346 - avinashmundhe54@gmail.com
-Aniket Kamble -  70401 16924 - Kambleaniket73@gmail.com
+
